@@ -1,0 +1,13 @@
+{
+  "name": "node-red-contrib-xlsx-autofit",
+  "version": "1.0.0",
+  "description": "A Node-RED node to convert JSON to XLSX with autofit column width",
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  },
+  "node-red": {
+    "nodes": {
+      "xlsx-autofit": "xlsx-autofit.js"
+    }
+  }
+}

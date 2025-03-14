@@ -1,0 +1,30 @@
+<script type="text/javascript">
+    RED.nodes.registerType("xlsx-autofit", {
+        category: "function",
+        color: "#fdd835",
+        defaults: {
+            filepath: { value: "", required: false }
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "file.png",
+        label: function () {
+            return this.name || "xlsx-autofit";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="xlsx-autofit">
+    <div class="form-row">
+        <label for="node-input-filepath"><i class="fa fa-file"></i> File Path</label>
+        <input type="text" id="node-input-filepath" placeholder="e.g., /home/user/output.xlsx">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="xlsx-autofit">
+    <p><strong>Node-RED XLSX Autofit</strong> - Converts JSON to Excel with dynamic file saving.</p>
+    <p><strong>Input:</strong> JSON array (objects or 2D array).</p>
+    <p><strong>Output:</strong> An Excel (.xlsx) file with auto-adjusted columns.</p>
+    <p><strong>File Path:</strong> Can be set dynamically using <code>msg.filepath</code> or configured in the node.</p>
+</script>
+
