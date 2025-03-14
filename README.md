@@ -18,11 +18,6 @@ cd ~/.node-red
 npm install node-red-contrib-xlsx-autofit
 node-red-restart
 
-cd ~/.node-red
-git clone https://github.com/gussscm/node-red-contrib-xlsx-autofit.git
-cd node-red-contrib-xlsx-autofit
-npm install
-node-red-restart**
 ```
 
 ## 📌 File Path Handling
